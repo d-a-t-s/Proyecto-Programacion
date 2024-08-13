@@ -21,13 +21,13 @@ for i in range(len(n)):
         tempList.append(counter)
         counter = 0
     
-    nSoulucionV.append(tempList)
+    nSoulucionH.append(tempList)
 
 
 for i in range(len(n[0])):
     tempList = []
-    for j in n[i]:
-        if j:
+    for j in n:
+        if j[i]:
             counter += 1
         elif (counter):
             tempList.append(counter)
@@ -36,7 +36,7 @@ for i in range(len(n[0])):
         tempList.append(counter)
         counter = 0
     
-    nSoulucionH.append(tempList)
+    nSoulucionV.append(tempList)
 
 
 print(nSoulucionV)
